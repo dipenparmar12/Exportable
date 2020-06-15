@@ -1,0 +1,39 @@
+{
+  "name": "dipenparmar12/exportable",
+  "description": "A Laravel package for hassle free generate CSV,JSON files from (Eloquent model,Collection Array)",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Dipen parmar",
+      "email": "dipenparmar12@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": "^7.1",
+    "symfony/console": "^5.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Dipenparmar12\\Exportable\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Dipenparmar12\\Exportable\\ExportableServiceProvider"
+      ],
+      "aliases": {
+        "Exportable": "Dipenparmar12\\Exportable\\Facade"
+      }
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
